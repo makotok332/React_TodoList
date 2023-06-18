@@ -21,6 +21,7 @@ const Form = ({ createTodo }) => {
           type="text"
           value={enteredTodo}
           onChange={(e) => setEnteredTodo(e.target.value)}
+          placeholder="New Todo"
         />
       </form>
     </div>
