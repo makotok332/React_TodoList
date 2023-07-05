@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Input } from "@chakra-ui/react";
+import "./Form.css";
 
 const Form = ({ createTodo }) => {
   const [enteredTodo, setEnteredTodo] = useState("");
@@ -17,11 +19,12 @@ const Form = ({ createTodo }) => {
   return (
     <div>
       <form onSubmit={addTodo}>
-        <input
+        <Input
           type="text"
           value={enteredTodo}
           onChange={(e) => setEnteredTodo(e.target.value)}
           placeholder="New Todo"
+          variant="filled"
         />
       </form>
     </div>
