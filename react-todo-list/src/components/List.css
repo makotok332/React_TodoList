@@ -1,0 +1,5 @@
+.list {
+  width: 100%;
+  max-width: 500px; /* 任意の最大幅を指定 */
+  margin: 0 auto;
+}

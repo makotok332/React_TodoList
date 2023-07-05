@@ -1,11 +1,13 @@
 import "./App.css";
 import Todo from "./components/Todo";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const App = () => {
   return (
     <>
-      <h1>Todo List</h1>
-      <Todo />
+      <ChakraProvider>
+        <Todo />
+      </ChakraProvider>
     </>
   );
 };
